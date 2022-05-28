@@ -17,6 +17,8 @@ export default function Index(){
                 <li> <Link to='/media'> Calcular Média </Link> </li>
                 <li> <Link to='/temperatura'> Temperatura </Link> </li>
                 <li> <Link to='/tabuada'> Tabuada </Link> </li>
+                <li> <Link to='/maiorNumero'> MaiorNumero </Link> </li>
+
 
             </ul>
         </main>
