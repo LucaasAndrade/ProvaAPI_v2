@@ -3,8 +3,8 @@ import { useState } from "react"
 
 
 export default function Index(){
-    const [numero, setNumero] = useState(0);
-    const [resp, setResposta] = useState(0);
+    const [numero, setNumero] = useState('');
+    const [resp, setResposta] = useState('');
 
     async function CalcularDobro(){
         const resposta = await axios.get('http://localhost:5000/dobro/' + numero);
