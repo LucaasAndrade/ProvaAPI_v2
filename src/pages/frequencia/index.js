@@ -8,7 +8,7 @@ export default function Index(){
     const [resp, setResposta] = useState(0);
 
     async function VerFrequencia() {
-        const resposta = await axios.get('http://localhost:5000/dia2/freqCaracter/' + texto + '/' + caracter);
+        const resposta = await axios.get(`'http://localhost:5000/dia2/freqCaracter/'/${texto}/${caracter}`);
         setResposta(resposta.data.freq);
     }
     return (
@@ -19,9 +19,9 @@ export default function Index(){
             <p>Digite a letra para ver a Frequência</p>
             caracter: <input type='text' value={caracter} onChange={e => setCaracter(e.target.value)} />
 
-            <button onClick={VerFrequencia} > Checar</button>
+            <button onClick={VerFrequencia} > Checar </button>
 
             <p> O caracter "{caracter}" aparece {resp} vezes no texto. </p>
         </main>
     )
-}
+}   
